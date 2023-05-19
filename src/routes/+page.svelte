@@ -3,14 +3,12 @@
         font-family: 'Ring of Kerry';
         font-style: normal;
         font-weight: 400;
-        src: url('Ring of Kerry.otf');
+        src: url('fonts/Ring of Kerry.otf');
     }
 
     @font-face {
-        font-family: 'Tiki Tropic D';
-        font-style: normal;
-        font-weight: 400;
-        src: url('Tiki Tropic D.otf');
+        font-family: 'BabelStoneOghamLithic';
+        src: url('fonts/BabelStoneOghamLithic.ttf');
     }
 
     @keyframes fadein {
@@ -24,112 +22,166 @@
         to { rotate: -45deg; z-index: 99; }
     }
 
-    .intro {    
-        background-image: url(pexels-helena-lopes-841303.jpg);
-        background-repeat: round;
-        opacity: 1;
-        z-index: -99;
-        -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 5s; /* Firefox < 16 */
-        -ms-animation: fadein 5s; /* Internet Explorer */
-        -o-animation: fadein 5s; /* Opera < 12.1 */
-        animation: fadein 5s;
+    @keyframes show_ostara {
+        from { rotate: 0deg; z-index: 99; }
+        80% { rotate: -94deg; z-index: 99; }
+        to { rotate: -90deg; z-index: 99; }
     }
 
-    .intro-content {
+    @keyframes show_beltane {
+        from { rotate: 0deg; z-index: 99; }
+        80% { rotate: -137deg; z-index: 99; }
+        to { rotate: -134deg; z-index: 99; }
+    }
+
+    @keyframes show_lughnasadh {
+        from { rotate: 0deg; z-index: 99; }
+        80% { rotate: -226deg; z-index: 99; }
+        to { rotate: -223deg; z-index: 99; }
+    }
+
+    @keyframes show_samhain {
+        from { rotate: 0deg; z-index: 99; }
+        80% { rotate: -317deg; z-index: 99; }
+        to { rotate: -315deg; z-index: 99; }
+    }
+
+    @keyframes show_yule {
+        from { rotate: 0deg; z-index: 99; }
+        30% { rotate: -2deg; z-index: 99; }
+        80% { rotate: 2deg; z-index: 99; }
+        to { rotate: 0deg; z-index: 99; }
+    }
+
+    .center-flex {
         text-align: center;
         background: transparent;
         display: flex;
         flex-direction: column;
     }
 
+    .intro {
+        background-repeat: space;
+    }
+
+    .show-lughnasadh-bg {
+        background-image: url(lughnasadh.webp);
+    }
+
+    .intro-form {
+        margin-top: 2vh;
+        z-index: 99;
+    }
+
     .title-text {
         font-family: 'Ring of Kerry';
-        font-size: 2rem;
-        color: red;
+        font-size: 2.5rem;
+        /* color: black; */
         font-weight: 900;
     }
 
-    .info {
-        z-index: -99;
-        background-color: rgba(153, 51, 51, 0.46);
-        text-align: left;
-        background:
-            linear-gradient(135deg, rgba(65, 114, 78, 0.2) 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
-            linear-gradient(225deg, rgba(65, 115, 78, 0.2) 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
-        background-color: rgba(65, 114, 78, 0.2);
-        background-size: 64px 128px;
-    }
-
-    .details {
-        background-image: url(parchment.jpg);
-        background-repeat: round;
+    .text-center {
+        text-align: center;
     }
 
     .wheel-image {
         z-index: 99;
         opacity: 1;
-        width: 80vw;
-        height: 80vw;
-        max-width: 500px;
-        max-height: 500px;
+        width: 60vw;
+        height: 60vw;
+        max-width: 400px;
+        max-height: 400px;
         background-image: url(wheel_of_the_year.png);
         background-size: cover;
         position: relative;
         margin-top: 2%;
         align-self: center;
+    }
+
+    .show-imbolc {
         animation: show_imbolc 5s;
         animation-iteration-count: 1;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
     }
 
-    .thanks {
-        background-image: url(brigid.png);
-        opacity: 0.4;
-        width: 100%;
-        height: 100vh;
-        background-repeat: round;
+    .show-ostara {
+        animation: show_ostara 5s;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .show-beltane {
+        animation: show_beltane 5s;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .show-litha {
+        animation: show_litha 5s;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .show-lughnasadh {
+        animation: show_lughnasadh 5s;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .show-mabon {
+        animation: show_mabon 5s;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .show-samhain {
+        animation: show_samhain 5s;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .show-yule {
+        animation: show_yule 5s;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
     }
 </style>
 
-<section class="intro section"> 
-    <div class="intro-content">
-        <div class="title-text">A very San Diego</div>
-        <div class="title-text">Imbolc potluck</div>
-        <div class="wheel-image"></div>
+<div class="intro show-lughnasadh-bg section"> 
+    <div class="intro-content center-flex">
+        <div class="title-text">Pagan Picnic Time</div>
+        <div class={`wheel-image show-lughnasadh`}></div>
     </div>
-</section>
-<section class="info section">
-    <p class="text-large">
-        You are cordially invited to a picnic potluck celebrating the occasion of Imbolc
-    </p>
-    <p class="text-small">
-        Imbolc marks the transition of winter to spring with fire and the bounties of nature
-    </p>
-</section>
-<section class="details section">
-    <p class="text-small left bold">
-        When:
-    </p>
-    <p class="text-small left">
-        February 4, 2022
-    </p>
-    <p class="text-small left bold">
-        Where:
-    </p>
-    <p class="text-small left">
-        TBD
-    </p>
-    <p class="text-small left bold">
-        What to bring:
-    </p>
-    <p class="text-small left">
-        Traditional Imbolc food includes butter, sheep's cheese, lavender and any foods resembling or related to the sun
-    </p>
-</section>
-<!-- <section class="thanks section">
-    <p class="text-large">
-        Hope to see you there!
-    </p>
-</section> -->
+    <div class="intro-form center-flex">
+        
+    </div>
+</div>
+
+<div class="section text-center">
+    <h2>You are invited to a picnic potluck celebrating</h2>
+    <h1>Lughnasadh (loo-na-sah)</h1>
+    <p>Lugnasadh is a harvest festival traditionally celebrated to honor the Celtic god Lugh</p>
+    <p>Typical activities included sports and enjoying the fruits of the summer harvest</p>
+    <h2>Activities</h2>
+    <div class="list-container">
+        <div class="list-item">Bike Jousting</div>
+        <div class="list-item">Crowning of King Puck</div>
+        <div class="list-item">Bread Man</div>
+        <div class="list-item">Arts & Crafts</div>
+    </div>
+
+    <h2>Food + what to bring</h2>
+    <div class="list-container">
+        <div class="list-item">Grains & bread</div>
+        <div class="list-item">Berries and jams</div>
+        <div class="list-item">Whatever fun summer stuff you like!</div>
+    </div>
+</div>
