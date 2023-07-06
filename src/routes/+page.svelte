@@ -75,9 +75,14 @@
 
     .title-text {
         font-family: 'Ring of Kerry';
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         /* color: black; */
-        font-weight: 900;
+        font-weight: 800;
+    }
+
+    .header-text {
+        font-size: 2rem;
+        font-weight: 600;
     }
 
     .text-center {
@@ -153,11 +158,15 @@
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
     }
+
+    .list-container {
+        margin-top: 8vh;
+    }
 </style>
 
 <div class="intro show-lughnasadh-bg section"> 
     <div class="intro-content center-flex">
-        <div class="title-text">Pagan Picnic Time</div>
+        <div class="title-text">Picnic Time</div>
         <div class={`wheel-image show-lughnasadh`}></div>
     </div>
     <div class="intro-form center-flex">
@@ -166,22 +175,26 @@
 </div>
 
 <div class="section text-center">
-    <h2>You are invited to a picnic potluck celebrating</h2>
-    <h1>Lughnasadh (loo-na-sah)</h1>
-    <p>Lugnasadh is a harvest festival traditionally celebrated to honor the Celtic god Lugh</p>
-    <p>Typical activities included sports and enjoying the fruits of the summer harvest</p>
-    <h2>Activities</h2>
     <div class="list-container">
+        <div class="header-text">Activities</div>
         <div class="list-item">Bike Jousting</div>
         <div class="list-item">Crowning of King Puck</div>
         <div class="list-item">Bread Man</div>
-        <div class="list-item">Arts & Crafts</div>
+        <div class="list-item">Crafts</div>
     </div>
 
-    <h2>Food + what to bring</h2>
     <div class="list-container">
-        <div class="list-item">Grains & bread</div>
+        <div class="header-text">Vittles</div>
+        <div class="list-item">Bread</div>
         <div class="list-item">Berries and jams</div>
-        <div class="list-item">Whatever fun summer stuff you like!</div>
+    </div>
+
+    <div class="list-container">
+        <div class="list-item">Saturday 7/29/2023 | 2PM to Sunset-ish</div>
+        <div class="list-item">
+            <a href="https://goo.gl/maps/TDtox1PtXxFQr9iz7">
+                @Kit Carson Park by Tree Lake
+            </a>
+        </div>
     </div>
 </div>
