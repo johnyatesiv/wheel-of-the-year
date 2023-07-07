@@ -12,7 +12,8 @@ const config = {
             // default options are shown. On some platforms
             // these options are set automatically — see below
             target: "#svelte",
-			adapter: adapter()
+			adapter: adapter(),
+			fallback: undefined
         })
 	}
 };
