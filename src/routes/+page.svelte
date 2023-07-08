@@ -8,7 +8,7 @@
 
     @font-face {
         font-family: 'BabelStoneOghamLithic';
-        src: url('$lib/assetsfonts/BabelStoneOghamLithic.ttf');
+        src: url('$lib/assets/fonts/BabelStoneOghamLithic.ttf');
     }
 
     @keyframes fadein {
