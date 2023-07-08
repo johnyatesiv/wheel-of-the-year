@@ -3,12 +3,12 @@
         font-family: 'Ring of Kerry';
         font-style: normal;
         font-weight: 400;
-        src: url('fonts/Ring of Kerry.otf');
+        src: url('$lib/assets/fonts/rok.otf');
     }
 
     @font-face {
         font-family: 'BabelStoneOghamLithic';
-        src: url('fonts/BabelStoneOghamLithic.ttf');
+        src: url('$lib/assetsfonts/BabelStoneOghamLithic.ttf');
     }
 
     @keyframes fadein {
@@ -65,7 +65,7 @@
     }
 
     .show-lughnasadh-bg {
-        background-image: url(lughnasadh.webp);
+        background-image: url($lib/assets/images/lughnasadh.webp);
     }
 
     .intro-form {
@@ -96,7 +96,7 @@
         height: 60vw;
         max-width: 400px;
         max-height: 400px;
-        background-image: url(wheel_of_the_year.png);
+        background-image: url($lib/assets/images/wheel_of_the_year.png);
         background-size: cover;
         position: relative;
         margin-top: 2%;
