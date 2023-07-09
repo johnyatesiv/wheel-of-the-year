@@ -89,6 +89,7 @@
     }
 
     .header-text {
+        filter: none;
         font-size: 1.4rem;
         font-weight: 600;
     }
@@ -181,7 +182,7 @@
     .invite {
         background-image: url($lib/assets/images/floral_pattern.png);
         background-size: cover;
-        /* opacity: 0.2; */
+        height: 170vh;
     }
 
     .invite-illumination {
@@ -190,11 +191,6 @@
         height: 267px;
         max-width: 100%;
     }
-
-    /* this will apply to <body> */
-    /* html {
-        width: 100%;
-    } */
 
     :global(body) { 
         margin: 0;
@@ -225,13 +221,16 @@
         font-weight: 800;
     }
 
-    .foreground {
-        opacity: 1;
-        z-index: 99;
-    }
-
     .attributions {
         display: none;
+    }
+
+    .card {
+        margin: 2em 0;
+        padding: 2em;
+        box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+        background: #fffef0;
+        filter: url(#wavy2);
     }
     
     /* Extra small devices (phones, 600px and down) */
@@ -280,17 +279,17 @@
     </div>
 </div>
 
-<div class="section invite text-center">
+<div class="invite section text-center">
     <div class="flex-section mobile-hide foreground">
         <div class="invite-illumination"></div>
     </div>
     <div class="flex-section rok-text foreground">
-        <div class="header-text">
+        <div class="header-text card">
             You are cordially invited to a summer picnic potluck
         </div>
     </div>
     <div class="flex-section rok-text foreground">
-        <div class="list-container">
+        <div class="list-container card">
             <div class="header-text">Where & When</div>
             <div class="list-item">Saturday 7/29/2023</div>
             <div class="list-item">Noon to Sunset-ish</div>
@@ -300,8 +299,9 @@
                 </a>
             </div>
         </div>
-
-        <div class="list-container">
+    </div>
+    <div class="flex-section rok-text foreground">
+        <div class="list-container card">
             <div class="header-text">Activities</div>
             <div class="list-item">Bread Man</div>
             <div class="list-item">Lawn Games</div>
@@ -309,7 +309,7 @@
             <div class="list-item">Arts + Crafts</div>
         </div>
     
-        <div class="list-container">
+        <div class="list-container card">
             <div class="header-text">What to bring</div>
             <div class="list-item">Bread</div>
             <div class="list-item">Berries & jams & wines</div>
@@ -318,6 +318,13 @@
         </div>        
     </div>
 </div>
+
+<svg style="display:none;">
+    <filter id="wavy2">
+      <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1"></feTurbulence>
+      <feDisplacementMap in="SourceGraphic" scale="20" />
+    </filter>
+  </svg>
 
 <div class='attributions'>
     Images sourced from 
