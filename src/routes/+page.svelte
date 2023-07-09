@@ -100,10 +100,10 @@
     .wheel-image {
         z-index: 99;
         opacity: 1;
-        width: 70vw;
-        height: 70vw;
-        max-width: 800px;
-        max-height: 800px;
+        width: 65vw;
+        height: 65vw;
+        max-width: 600px;
+        max-height: 600px;
         background-image: url($lib/assets/images/wheel_of_the_year.png);
         background-size: cover;
         position: relative;
@@ -169,6 +169,7 @@
 
     .list-container {
         margin-top: 8vh;
+        font-weight: bold;
     }
 
     .flex-section {
@@ -178,7 +179,9 @@
     }
 
     .invite {
-        background-color: 'yellow';
+        background-image: url($lib/assets/images/floral_pattern.png);
+        background-size: cover;
+        /* opacity: 0.2; */
     }
 
     .invite-illumination {
@@ -189,9 +192,9 @@
     }
 
     /* this will apply to <body> */
-    html {
+    /* html {
         width: 100%;
-    }
+    } */
 
     :global(body) { 
         margin: 0;
@@ -222,6 +225,15 @@
         font-weight: 800;
     }
 
+    .foreground {
+        opacity: 1;
+        z-index: 99;
+    }
+
+    .attributions {
+        display: none;
+    }
+    
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {        
         .flex-section {
@@ -260,7 +272,7 @@
 
 <div class="intro show-lughnasadh-bg section"> 
     <div class="intro-content center-flex">
-        <div class="title-text">Picnic Time</div>
+        <div class="title-text">Picnic Time!!</div>
         <div class={`wheel-image show-lughnasadh`}></div>
     </div>
     <div class="intro-form center-flex">
@@ -269,19 +281,19 @@
 </div>
 
 <div class="section invite text-center">
-    <div class="flex-section mobile-hide">
+    <div class="flex-section mobile-hide foreground">
         <div class="invite-illumination"></div>
     </div>
-    <div class="flex-section rok-text">
+    <div class="flex-section rok-text foreground">
         <div class="header-text">
             You are cordially invited to a summer picnic potluck
         </div>
     </div>
-    <div class="flex-section rok-text">
+    <div class="flex-section rok-text foreground">
         <div class="list-container">
             <div class="header-text">Where & When</div>
             <div class="list-item">Saturday 7/29/2023</div>
-            <div class="list-item">2PM to Sunset-ish</div>
+            <div class="list-item">Noon to Sunset-ish</div>
             <div class="list-item">
                 <a href="https://goo.gl/maps/TDtox1PtXxFQr9iz7">
                     @Kit Carson Park by Tree Lake
@@ -291,9 +303,10 @@
 
         <div class="list-container">
             <div class="header-text">Activities</div>
-            <div class="list-item">Bike Jousting</div>
             <div class="list-item">Bread Man</div>
-            <div class="list-item">Crafts</div>
+            <div class="list-item">Lawn Games</div>
+            <div class="list-item">Bike Jousting</div>
+            <div class="list-item">Arts + Crafts</div>
         </div>
     
         <div class="list-container">
@@ -304,4 +317,12 @@
             <div class="list-item">Shade + sunscreen</div>
         </div>        
     </div>
+</div>
+
+<div class='attributions'>
+    Images sourced from 
+    <a href="https://www.freepik.com/free-vector/vintage-flourish-pattern_3413194.htm#query=medieval%20background%20pattern&position=8&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik
+    - Wordpress
+
+    Thanks to all who provided images for this page
 </div>
