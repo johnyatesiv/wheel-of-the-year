@@ -6,6 +6,10 @@
         src: url('$lib/assets/fonts/rok.otf');
     }
 
+    .rok-text {
+        font-family: 'Ring of Kerry';
+    }
+
     @font-face {
         font-family: 'BabelStoneOghamLithic';
         src: url('$lib/assets/fonts/BabelStoneOghamLithic.ttf');
@@ -64,6 +68,10 @@
         background-repeat: space;
     }
 
+    .section {
+        padding-top: 5vh;
+    }
+
     .show-lughnasadh-bg {
         background-image: url($lib/assets/images/lughnasadh.webp);
     }
@@ -81,7 +89,7 @@
     }
 
     .header-text {
-        font-size: 2rem;
+        font-size: 1.4rem;
         font-weight: 600;
     }
 
@@ -92,10 +100,10 @@
     .wheel-image {
         z-index: 99;
         opacity: 1;
-        width: 60vw;
-        height: 60vw;
-        max-width: 400px;
-        max-height: 400px;
+        width: 70vw;
+        height: 70vw;
+        max-width: 800px;
+        max-height: 800px;
         background-image: url($lib/assets/images/wheel_of_the_year.png);
         background-size: cover;
         position: relative;
@@ -162,6 +170,92 @@
     .list-container {
         margin-top: 8vh;
     }
+
+    .flex-section {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2vh;
+    }
+
+    .invite {
+        background-color: 'yellow';
+    }
+
+    .invite-illumination {
+        background: url($lib/assets/images/illumination.jpg);
+        width: 586px;
+        height: 267px;
+        max-width: 100%;
+    }
+
+    /* this will apply to <body> */
+    html {
+        width: 100%;
+    }
+
+    :global(body) { 
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .section {
+        position: relative;
+        display: block;
+        height: 100vh;
+        width: 80vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        padding-top: 5vh;
+        align-content: center;  
+    }
+
+    .divider-section {
+        height: 5vh;
+        width: 100vw;
+    }
+
+    .bold {
+        font-weight: 800;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {        
+        .flex-section {
+            flex-direction: column;
+        }
+
+        .mobile-hide {
+            display: none;
+        }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {    
+        .flex-section {
+            flex-direction: column;
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .flex-section {
+            flex-direction: row;
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        
+    }
 </style>
 
 <div class="intro show-lughnasadh-bg section"> 
@@ -174,27 +268,40 @@
     </div>
 </div>
 
-<div class="section text-center">
-    <div class="list-container">
-        <div class="header-text">Activities</div>
-        <div class="list-item">Bike Jousting</div>
-        <div class="list-item">Crowning of King Puck</div>
-        <div class="list-item">Bread Man</div>
-        <div class="list-item">Crafts</div>
+<div class="section invite text-center">
+    <div class="flex-section mobile-hide">
+        <div class="invite-illumination"></div>
     </div>
-
-    <div class="list-container">
-        <div class="header-text">Vittles</div>
-        <div class="list-item">Bread</div>
-        <div class="list-item">Berries and jams</div>
-    </div>
-
-    <div class="list-container">
-        <div class="list-item">Saturday 7/29/2023 | 2PM to Sunset-ish</div>
-        <div class="list-item">
-            <a href="https://goo.gl/maps/TDtox1PtXxFQr9iz7">
-                @Kit Carson Park by Tree Lake
-            </a>
+    <div class="flex-section rok-text">
+        <div class="header-text">
+            You are cordially invited to a summer picnic potluck
         </div>
+    </div>
+    <div class="flex-section rok-text">
+        <div class="list-container">
+            <div class="header-text">Where & When</div>
+            <div class="list-item">Saturday 7/29/2023</div>
+            <div class="list-item">2PM to Sunset-ish</div>
+            <div class="list-item">
+                <a href="https://goo.gl/maps/TDtox1PtXxFQr9iz7">
+                    @Kit Carson Park by Tree Lake
+                </a>
+            </div>
+        </div>
+
+        <div class="list-container">
+            <div class="header-text">Activities</div>
+            <div class="list-item">Bike Jousting</div>
+            <div class="list-item">Bread Man</div>
+            <div class="list-item">Crafts</div>
+        </div>
+    
+        <div class="list-container">
+            <div class="header-text">What to bring</div>
+            <div class="list-item">Bread</div>
+            <div class="list-item">Berries & jams & wines</div>
+            <div class="list-item">Summer harvest goods</div>
+            <div class="list-item">Shade + sunscreen</div>
+        </div>        
     </div>
 </div>
