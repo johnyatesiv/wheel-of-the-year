@@ -66,10 +66,7 @@
 
     .intro {
         background-repeat: space;
-    }
-
-    .section {
-        padding-top: 5vh;
+        height: 100vh;
     }
 
     .show-lughnasadh-bg {
@@ -176,13 +173,13 @@
     .flex-section {
         display: flex;
         justify-content: space-evenly;
-        margin-top: 2vh;
+        margin-top: 1vh;
     }
 
     .invite {
         background-image: url($lib/assets/images/floral_pattern.png);
         background-size: cover;
-        height: 170vh;
+        height: 200vh;
     }
 
     .invite-illumination {
@@ -201,15 +198,14 @@
     .section {
         position: relative;
         display: block;
-        height: 100vh;
-        width: 80vw;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        width: 100%;
+        background-size: cover;
+        /* padding-left: 10vw; */
+        /* padding-right: 10vw; */
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         padding-top: 5vh;
-        align-content: center;  
+        align-content: center;
     }
 
     .divider-section {
@@ -226,11 +222,14 @@
     }
 
     .card {
-        margin: 2em 0;
+        margin: 4% auto;
         padding: 2em;
+        width: 60%;
         box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
         background: #fffef0;
-        filter: url(#wavy2);
+        border-radius: 10px;
+        /** need to reposition text to avoid blurring it **/
+        /* filter: url(#wavy2); */
     }
     
     /* Extra small devices (phones, 600px and down) */
@@ -280,15 +279,15 @@
 </div>
 
 <div class="invite section text-center">
-    <div class="flex-section mobile-hide foreground">
+    <div class="flex-section mobile-hide">
         <div class="invite-illumination"></div>
     </div>
-    <div class="flex-section rok-text foreground">
+    <div class="flex-section rok-text">
         <div class="header-text card">
             You are cordially invited to a summer picnic potluck
         </div>
     </div>
-    <div class="flex-section rok-text foreground">
+    <div class="flex-section rok-text">
         <div class="list-container card">
             <div class="header-text">Where & When</div>
             <div class="list-item">Saturday 7/29/2023</div>
@@ -300,7 +299,7 @@
             </div>
         </div>
     </div>
-    <div class="flex-section rok-text foreground">
+    <div class="flex-section rok-text">
         <div class="list-container card">
             <div class="header-text">Activities</div>
             <div class="list-item">Bread Man</div>
@@ -308,14 +307,22 @@
             <div class="list-item">Bike Jousting</div>
             <div class="list-item">Arts + Crafts</div>
         </div>
-    
+    </div>
+    <div class="flex-section rok-text">
         <div class="list-container card">
             <div class="header-text">What to bring</div>
-            <div class="list-item">Bread</div>
+            <div class="list-item">Breads & grains</div>
             <div class="list-item">Berries & jams & wines</div>
             <div class="list-item">Summer harvest goods</div>
             <div class="list-item">Shade + sunscreen</div>
         </div>        
+    </div>
+
+</div>
+
+<div class="summary section text-center">
+    <div class="header-text">
+        Hope to see you there!
     </div>
 </div>
 
