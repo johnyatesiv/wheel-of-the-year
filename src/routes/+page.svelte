@@ -170,6 +170,10 @@
         font-weight: bold;
     }
 
+    .list-item {
+        font-family: fantasy
+    }
+
     .flex-section {
         display: flex;
         justify-content: space-evenly;
@@ -187,6 +191,20 @@
         width: 586px;
         height: 267px;
         max-width: 100%;
+    }
+
+    .summary {
+        height: 100vh;
+        width: 100%;
+        background: url($lib/assets/images/medieval_paper.png);
+        background-size: cover;
+        padding-top: 8vh;
+    }
+
+    .summary-header {
+        margin-top: 30vh;
+        margin-left: 10vw;
+        font-size: 3em;
     }
 
     :global(body) { 
@@ -222,7 +240,7 @@
     }
 
     .card {
-        margin: 4% auto;
+        margin: 2% auto;
         padding: 2em;
         width: 60%;
         box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
@@ -230,6 +248,13 @@
         border-radius: 10px;
         /** need to reposition text to avoid blurring it **/
         /* filter: url(#wavy2); */
+    }
+
+    .border {
+        width: 100%;
+        height: 10vh;
+        background: url($lib/assets/images/stone.jpg);
+        background-size: cover;
     }
     
     /* Extra small devices (phones, 600px and down) */
@@ -278,6 +303,8 @@
     </div>
 </div>
 
+<div class="border"></div>
+
 <div class="invite section text-center">
     <div class="flex-section mobile-hide">
         <div class="invite-illumination"></div>
@@ -291,7 +318,7 @@
         <div class="list-container card">
             <div class="header-text">Where & When</div>
             <div class="list-item">Saturday 7/29/2023</div>
-            <div class="list-item">Noon to Sunset-ish</div>
+            <div class="list-item">2PM to Sunset</div>
             <div class="list-item">
                 <a href="https://goo.gl/maps/TDtox1PtXxFQr9iz7">
                     @Kit Carson Park by Tree Lake
@@ -317,11 +344,12 @@
             <div class="list-item">Shade + sunscreen</div>
         </div>        
     </div>
-
 </div>
 
+<div class="border"></div>
+
 <div class="summary section text-center">
-    <div class="header-text">
+    <div class="header-text summary-header rok-text">
         Hope to see you there!
     </div>
 </div>
