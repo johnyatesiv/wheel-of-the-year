@@ -8,6 +8,7 @@
 
     .rok-text {
         font-family: 'Ring of Kerry';
+        color: rgba(0, 0, 0, 0.854);
     }
 
     @font-face {
@@ -196,15 +197,26 @@
     .summary {
         height: 100vh;
         width: 100%;
-        background: url($lib/assets/images/medieval_paper.png);
+        background: url($lib/assets/images/summer_harvest.png);
         background-size: cover;
-        padding-top: 8vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
     .summary-header {
-        margin-top: 30vh;
-        margin-left: 10vw;
         font-size: 3em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .h-illumination {
+        background: url($lib/assets/images/h.png);
+        background-size: cover;
+        min-width: 200px;
+        min-height: 200px;
     }
 
     :global(body) { 
@@ -243,6 +255,7 @@
         margin: 2% auto;
         padding: 2em;
         width: 60%;
+        max-width: 400px;
         box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
         background: #fffef0;
         border-radius: 10px;
@@ -253,8 +266,17 @@
     .border {
         width: 100%;
         height: 10vh;
-        background: url($lib/assets/images/stone.jpg);
-        background-size: cover;
+        position: relative;
+        z-index: 9;
+        background: url($lib/assets/images/ai_border.png);
+        background-size: contain;
+        box-shadow: -6px -5px 20px 3px black;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     
     /* Extra small devices (phones, 600px and down) */
@@ -266,11 +288,21 @@
         .mobile-hide {
             display: none;
         }
+
+        .summary-header {
+            flex-direction: column;
+            font-size: 3rem;
+            padding: 2vw;
+        }
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {    
         .flex-section {
+            flex-direction: column;
+        }
+
+        .summary-header {
             flex-direction: column;
         }
     }
@@ -350,7 +382,10 @@
 
 <div class="summary section text-center">
     <div class="header-text summary-header rok-text">
-        Hope to see you there!
+        <div class="flex-row">
+            <div class="h-illumination"></div>ope
+        </div>
+        <div>to see you there!</div>
     </div>
 </div>
 
@@ -365,6 +400,8 @@
     Images sourced from 
     <a href="https://www.freepik.com/free-vector/vintage-flourish-pattern_3413194.htm#query=medieval%20background%20pattern&position=8&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik
     - Wordpress
+    - Wikimedia Commons
+    - DALL-E generated
 
     Thanks to all who provided images for this page
 </div>
