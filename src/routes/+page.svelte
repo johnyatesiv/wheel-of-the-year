@@ -88,7 +88,7 @@
 
     .header-text {
         filter: none;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         font-weight: 600;
     }
 
@@ -167,12 +167,13 @@
     }
 
     .list-container {
-        margin-top: 8vh;
+        margin-top: 4vh;
         font-weight: bold;
     }
 
     .list-item {
-        font-family: fantasy
+        font-family: fantasy;
+        font-size: 1.2rem;
     }
 
     .flex-section {
@@ -184,7 +185,7 @@
     .invite {
         background-image: url($lib/assets/images/floral_pattern.png);
         background-size: cover;
-        height: 200vh;
+        height: 170vh;
     }
 
     .invite-illumination {
@@ -215,8 +216,8 @@
     .h-illumination {
         background: url($lib/assets/images/h.png);
         background-size: cover;
-        min-width: 200px;
-        min-height: 200px;
+        min-width: 120px;
+        min-height: 120px;
     }
 
     :global(body) { 
@@ -255,7 +256,7 @@
         margin: 2% auto;
         padding: 2em;
         width: 60%;
-        max-width: 400px;
+        max-width: 1000px;
         box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
         background: #fffef0;
         border-radius: 10px;
@@ -294,6 +295,14 @@
             font-size: 3rem;
             padding: 2vw;
         }
+
+        .invite {
+            height: 140vh;
+        }
+
+        .intro {
+            height: 90vh;
+        }
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -305,6 +314,10 @@
         .summary-header {
             flex-direction: column;
         }
+
+        .invite {
+            height: 160vh;
+        }
     }
 
     /* Medium devices (landscape tablets, 768px and up) */
@@ -312,16 +325,24 @@
         .flex-section {
             flex-direction: row;
         }
+
+        .invite {
+            height: 180vh;
+        }
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
-        
+        .invite {
+            height: 200vh;
+        }
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
-        
+        .invite {
+            height: 220vh;
+        }
     }
 </style>
 
@@ -338,54 +359,58 @@
 <div class="border"></div>
 
 <div class="invite section text-center">
-    <div class="flex-section mobile-hide">
-        <div class="invite-illumination"></div>
-    </div>
     <div class="flex-section rok-text">
         <div class="header-text card">
             You are cordially invited to a summer picnic potluck
         </div>
     </div>
-    <div class="flex-section rok-text">
-        <div class="list-container card">
-            <div class="header-text">Where & When</div>
-            <div class="list-item">Saturday 7/29/2023</div>
-            <div class="list-item">2PM to Sunset</div>
-            <div class="list-item">
-                <a href="https://goo.gl/maps/TDtox1PtXxFQr9iz7">
-                    @Kit Carson Park by Tree Lake
-                </a>
+    <div class="flex-section mobile-hide">
+        <div class="invite-illumination"></div>
+    </div>
+    <div class="details card">
+        <div class="flex-section rok-text">
+            <div class="list-container">
+                <div class="header-text">Where & When</div>
+                <div class="list-item">Saturday 7/29/2023</div>
+                <div class="list-item">2PM to Sunset</div>
+                <div class="list-item">
+                    <a href="https://goo.gl/maps/TDtox1PtXxFQr9iz7">
+                        @Kit Carson Park by Tree Lake
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="flex-section rok-text">
-        <div class="list-container card">
-            <div class="header-text">Activities</div>
-            <div class="list-item">Bread Man</div>
-            <div class="list-item">Lawn Games</div>
-            <div class="list-item">Bike Jousting</div>
-            <div class="list-item">Arts + Crafts</div>
+        <div class="flex-section rok-text">
+            <div class="list-container">
+                <div class="header-text">Activities</div>
+                <div class="list-item">Bread Man</div>
+                <div class="list-item">Lawn Games</div>
+                <div class="list-item">Bike Jousting</div>
+                <div class="list-item">Arts + Crafts</div>
+            </div>
         </div>
-    </div>
-    <div class="flex-section rok-text">
-        <div class="list-container card">
-            <div class="header-text">What to bring</div>
-            <div class="list-item">Breads & grains</div>
-            <div class="list-item">Berries & jams & wines</div>
-            <div class="list-item">Summer harvest goods</div>
-            <div class="list-item">Shade + sunscreen</div>
-        </div>        
+        <div class="flex-section rok-text">
+            <div class="list-container">
+                <div class="header-text">What to bring</div>
+                <div class="list-item">Summer foods to share</div>
+                <div class="list-item">Shade, sunscreen & water</div>
+                <div class="list-item">Games and fun</div>
+                <div class="list-item">Or just bring yourself!</div>
+            </div>        
+        </div>
     </div>
 </div>
 
 <div class="border"></div>
 
 <div class="summary section text-center">
-    <div class="header-text summary-header rok-text">
-        <div class="flex-row">
-            <div class="h-illumination"></div>ope
+    <div class="card">
+        <div class="header-text summary-header rok-text">
+            <div class="flex-row">
+                <div class="h-illumination"></div>ope
+            </div>
+            <div>to see you there!</div>
         </div>
-        <div>to see you there!</div>
     </div>
 </div>
 
