@@ -67,7 +67,7 @@
 
     .intro {
         background-repeat: space;
-        height: 100vh;
+        height: 75vh;
     }
 
     .show-lughnasadh-bg {
@@ -101,8 +101,8 @@
         opacity: 1;
         width: 75vw;
         height: 75vw;
-        max-width: 600px;
-        max-height: 600px;
+        max-width: 400px;
+        max-height: 400px;
         background-image: url($lib/assets/images/wheel_of_the_year.png);
         background-size: cover;
         position: relative;
@@ -311,10 +311,6 @@
         .invite {
             display: none;
         }
-
-        .intro {
-            height: 90vh;
-        }
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -377,6 +373,8 @@
         }
     }
 </style>
+
+<div class="border"></div>
 
 <div class="intro show-lughnasadh-bg section"> 
     <div class="intro-content center-flex">
