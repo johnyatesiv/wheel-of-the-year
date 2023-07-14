@@ -88,7 +88,7 @@
 
     .header-text {
         filter: none;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         font-weight: 600;
     }
 
@@ -99,14 +99,14 @@
     .wheel-image {
         z-index: 99;
         opacity: 1;
-        width: 65vw;
-        height: 65vw;
+        width: 75vw;
+        height: 75vw;
         max-width: 600px;
         max-height: 600px;
         background-image: url($lib/assets/images/wheel_of_the_year.png);
         background-size: cover;
         position: relative;
-        margin-top: 2%;
+        margin-top: 2vh;
         align-self: center;
     }
 
@@ -185,7 +185,19 @@
     .invite {
         background-image: url($lib/assets/images/floral_pattern.png);
         background-size: cover;
-        height: 170vh;
+        height: auto;
+        font-size: 2rem;
+    }
+
+    .invite-mobile {
+        height: auto;
+        background-image: url($lib/assets/images/floral_pattern.png);
+        background-size: cover;
+        text-align: center;
+        padding: 4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .invite-illumination {
@@ -255,8 +267,8 @@
     .card {
         margin: 2% auto;
         padding: 2em;
-        width: 60%;
-        max-width: 1000px;
+        width: 75vw;
+        max-width: 75vw;
         box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
         background: #fffef0;
         border-radius: 10px;
@@ -297,7 +309,7 @@
         }
 
         .invite {
-            height: 140vh;
+            display: none;
         }
 
         .intro {
@@ -316,7 +328,7 @@
         }
 
         .invite {
-            height: 160vh;
+            display: none;
         }
     }
 
@@ -326,22 +338,42 @@
             flex-direction: row;
         }
 
+        .invite-mobile {
+            display: none;
+        }
+
         .invite {
-            height: 180vh;
+            display: flex;
+        }
+
+        .header-text {
+            font-size: 3rem;
+        }
+
+        .list-item {
+            font-size: 2rem;
         }
     }
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
+        .invite-mobile {
+            display: none;
+        }
+
         .invite {
-            height: 200vh;
+            display: flex;
         }
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
+        .invite-mobile {
+            display: none;
+        }
+
         .invite {
-            height: 220vh;
+            display: flex;
         }
     }
 </style>
@@ -368,6 +400,46 @@
         <div class="invite-illumination"></div>
     </div>
     <div class="details card">
+        <div class="flex-section rok-text">
+            <div class="list-container">
+                <div class="header-text">Where & When</div>
+                <div class="list-item">Saturday 7/29/2023</div>
+                <div class="list-item">2PM to Sunset</div>
+                <div class="list-item">
+                    <a href="https://goo.gl/maps/TDtox1PtXxFQr9iz7">
+                        @Kit Carson Park by Tree Lake
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-section rok-text">
+            <div class="list-container">
+                <div class="header-text">Activities</div>
+                <div class="list-item">Bread Man</div>
+                <div class="list-item">Lawn Games</div>
+                <div class="list-item">Bike Jousting</div>
+                <div class="list-item">Arts + Crafts</div>
+            </div>
+        </div>
+        <div class="flex-section rok-text">
+            <div class="list-container">
+                <div class="header-text">What to bring</div>
+                <div class="list-item">Summer foods to share</div>
+                <div class="list-item">Shade, sunscreen & water</div>
+                <div class="list-item">Games and fun</div>
+                <div class="list-item">Or just bring yourself!</div>
+            </div>        
+        </div>
+    </div>
+</div>
+
+<div class="invite-mobile">
+    <div class="card">
+        <div class="flex-section rok-text">
+            <div class="header-text">
+                You are cordially invited to a summer picnic potluck
+            </div>
+        </div>
         <div class="flex-section rok-text">
             <div class="list-container">
                 <div class="header-text">Where & When</div>
