@@ -404,8 +404,8 @@
                 <div class="list-item">Saturday 7/29/2023</div>
                 <div class="list-item">2PM to Sunset</div>
                 <div class="list-item">
-                    <a href="https://goo.gl/maps/TDtox1PtXxFQr9iz7">
-                        @Kit Carson Park by Tree Lake
+                    <a href="https://goo.gl/maps/jVqQwucx3tBrhtC48">
+                        @Felicita County Park
                     </a>
                 </div>
             </div>
@@ -444,8 +444,8 @@
                 <div class="list-item">Saturday 7/29/2023</div>
                 <div class="list-item">2PM to Sunset</div>
                 <div class="list-item">
-                    <a href="https://goo.gl/maps/TDtox1PtXxFQr9iz7">
-                        @Kit Carson Park by Tree Lake
+                    <a href="https://goo.gl/maps/jVqQwucx3tBrhtC48">
+                        @Felicita County Park
                     </a>
                 </div>
             </div>
